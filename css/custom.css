@@ -178,3 +178,9 @@ padding: 50px 50px 10px;
 .jumbotron {
 background-color: transparent;
 }
+
+.col-md-4 p {
+background: #fff;
+padding: 20px;
+color: #000;
+}
