@@ -27,7 +27,7 @@ a:hover {
 html,
 body {
   height: 100%;
-  background: #23415d url('../assets/img/bg.jpg') no-repeat center center /contain;
+  background: #23415d url('../assets/img/bg-new.jpg') no-repeat center center / contain;
 }
 body {
   color: #fff;
@@ -167,20 +167,48 @@ custom stuff
 
 h1.total {
 position: relative;
-top: -200px;
+top: -240px;
 left: 150px;
+font-size: 60px;
 }
 
 h1.login {
-padding: 50px 50px 10px;
+padding: 20px 50px 10px;
+margin-top: 0;
 }
 
 .jumbotron {
 background-color: transparent;
 }
 
+.car {
+height: 350px;
+position: relative;
+top: -70px
+}
+
 .col-md-4 p {
 background: #fff;
-padding: 20px;
+padding: 5px 20px;
 color: #000;
+font-size: 36px;
+}
+
+span.charity {
+color: #999;
+}
+
+.balloons {
+position: relative;
+top:-100px;
+}
+
+.balloon1 {
+position: relative;
+right: 100px;
+}
+
+.balloon3 {
+position: relative;
+left: 100px;
 }
