@@ -175,10 +175,15 @@ font-size: 60px;
 h1.login {
 padding: 20px 50px 10px;
 margin-top: 0;
+font-size: 50px;
 }
 
 .jumbotron {
 background-color: transparent;
+}
+
+span.donate_name {
+font-style: italic;
 }
 
 .car {
@@ -195,6 +200,11 @@ font-size: 36px;
 }
 
 span.charity {
+color: #999;
+}
+
+span.to_be {
+font-size: 36px;
 color: #999;
 }
 
