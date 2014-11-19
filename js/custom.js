@@ -1,25 +1,31 @@
-function doUpdate(element, endpoint) {
+var totals = {}
+
+function fadeInfadeOut(element, endpoint) {
 	$.ajax({
 		type: "GET",
 		url: 'https://codiuscheckin.localtunnel.me/'+endpoint,
 		success: function(data) {
-			element.html(data);
+			if (data != totals[endpoint]) {
+					element.fadeOut('slow', function() {
+					element.html(data);
+					element.fadeIn('slow');
+				});	
+			}
+			totals[endpoint] = data;
 		}
 	});
 }
 
+function updateAll() {
+	fadeInfadeOut($('.total_num'), 'tobedonated');
+	fadeInfadeOut($('.charity0'), 'charity0');
+	fadeInfadeOut($('.charity1'), 'charity1');
+	fadeInfadeOut($('.charity2'), 'charity2');
+	fadeInfadeOut($('.donate_name'), 'name');
+	window.setTimeout(updateAll, 1000);
+};
+
+
 $(document).ready(function() {
 	updateAll();
 });
-
-function updateAll() {
-	doUpdate($('.total_num'), 'tobedonated');
-	doUpdate($('.charity0'), 'charity0');
-	doUpdate($('.charity1'), 'charity1');
-	doUpdate($('.charity2'), 'charity2');
-	doUpdate($('.donate_name'), 'name');
-	doUpdate($('.phonenumber0'), 'phonenumber0');
-	doUpdate($('.phonenumber1'), 'phonenumber1');
-	doUpdate($('.phonenumber2'), 'phonenumber2');
-	window.setTimeout(updateAll, 1000);
-};
