@@ -192,11 +192,19 @@ position: relative;
 top: -70px
 }
 
+img.logo {
+padding: 10px;
+}
+
 .col-md-4 p {
 background: #fff;
 padding: 5px 20px;
 color: #000;
 font-size: 36px;
+width: 500px;
+position: relative;
+right: 50px;
+min-height: 334px;
 }
 
 span.charity {
@@ -215,10 +223,10 @@ top:-100px;
 
 .balloon1 {
 position: relative;
-right: 100px;
+right: 200px;
 }
 
 .balloon3 {
 position: relative;
-left: 100px;
+left: 200px;
 }
