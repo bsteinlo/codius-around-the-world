@@ -10,27 +10,9 @@ var options = {
   useGrouping : true, 
   separator : ',', 
   decimal : '.' ,
-  prefix : '$' ,
-  suffix : '' 
+  prefix : '$' 
 }
-// function fadeInfadeOut(element, endpoint) {
-// 	$.ajax({
-// 		type: "GET",
-// 		url: 'http://54.172.227.161:8000/'+endpoint,
-// 		success: function(data) {
-// 			if (data != totals[endpoint]) {
-// 					element.html(data);
-// 					element.splitFlap({
-// 						'image' : 'assets/img/chars3.png',
-// 						'charsMap' : '0123456789.',
-// 						'speed' : 6,
-// 						'speedVariation' : 2
-// 					});
-// 				}	
-// 			totals[endpoint] = data;
-// 		}
-// 	});
-// }
+
 
 function fadeInfadeOut(element, endpoint) {
 	$.ajax({
@@ -38,9 +20,7 @@ function fadeInfadeOut(element, endpoint) {
 		url: 'http://54.172.227.161:8000/'+endpoint,
 		success: function(data) {
 			if (data != totals[endpoint]) {
-			console.log(totals[endpoint]);
-			var demo = new countUp(element, totals[endpoint], data, 2, 3.5, options);
-					//element.html(data);
+					var demo = new countUp(element, totals[endpoint], data, 2, 3.5, options);
 					demo.start();
 				}	
 			totals[endpoint] = data;
