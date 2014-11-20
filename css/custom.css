@@ -184,6 +184,8 @@ background-color: transparent;
 
 span.donate_name {
 font-style: italic;
+ -webkit-animation: pulsate 2s ease-out;
+  -webkit-animation-iteration-count: 1; 
 }
 
 .car {
@@ -213,11 +215,10 @@ span.charity {
 color: #999;
 }
 
-
-
 span.to_be {
 font-size: 36px;
 color: #999;
+
 }
 
 .balloons {
@@ -233,4 +234,31 @@ right: 200px;
 .balloon3 {
 position: relative;
 left: 200px;
+}
+
+span.dollar {
+font-size: 100px;
+vertical-align: super;
+}
+
+
+.charity_label {
+font-size: 60px;
+position: absolute;
+bottom: 30px;
+left: 170px;
+}
+
+@-webkit-keyframes pulsate {
+    0% {-webkit-transform: scale(0.1, 0.1); }
+    100% {-webkit-transform: scale(1.2, 1.2);}
+}
+
+
+@media (min-width: 1200px) {
+
+	.container {
+		width: 1270px;
+	}
+
 }

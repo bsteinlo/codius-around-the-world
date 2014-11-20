@@ -12,6 +12,13 @@
 
     <!-- Custom styles -->
     <link href="css/custom.css" rel="stylesheet">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/Core.js"></script>
+    <script src="js/jquery.splitflap.js"></script>
+    <script src="js/countUp.js"></script>
 
   </head>
 
@@ -29,28 +36,28 @@
       <div class="row">
       <div class="col-md-12 car">
       	<img src="assets/img/car_total.png">
-      	<h1 class="total">$<span class="total_num"></span><br/><span class="to_be">To be donated<span></h1>
+      	<h1 class="total"><span id="total" class="total_num"></span><br/><span class="to_be">To be donated<span></h1>
       </div>
       <div class="balloons">
         <div class="col-md-4 balloon1">
           <img src="assets/img/balloon.png">
-           	<p><span><img class="logo" src="assets/img/doc.jpg"></span> <br/>Text <span class="phonenumber0">830-549-6091</span><br/>
-        	<span class="charity">To donate to Doctors Without Borders</span><br/>
-        	$<span class="charity_label charity0">0</span>   
+           	<p>Text <span class="phonenumber0">830-549-6091</span><br/>
+        	<span class="charity">To donate to <span><img class="logo" src="assets/img/doc.jpg"></span></span><br/>
+        	<span id="charity0" class="charity_label charity0">0</span>   
         	    	
         	</p>
         </div>
         <div class="col-md-4 balloon2">
           <img src="assets/img/balloon.png">
-			<p><span><img class="logo" src="assets/img/able.jpg"></span> <br/>Text <span class="phonenumber1">830-549-6092</span><br/>
-        	<span class="charity">To donate to Project A.B.L.E.</span><br/>
-        	$<span class="charity_label charity1">0</span>           	
+			<p><span>Text <span class="phonenumber1">830-549-6092</span><br/>
+        	<span class="charity">To donate to <img class="logo" src="assets/img/able2.png"></span></span><br/>
+        	<span id="charity1" class="charity_label charity1">0</span>           	
         	</p>       </div>
         <div class="col-md-4 balloon3">
           <img src="assets/img/balloon.png">
-			<p><span><img class="logo" src="assets/img/give.jpg"></span> <br/>Text <span class="phonenumber2">830-549-6093</span><br/>
-        	<span class="charity">To donate to <br/>GiveDirectly</span><br/>
-        	$<span class="charity_label charity2">0</span>      
+			<p>Text <span class="phonenumber2">830-549-6093</span><br/>
+        	<span class="charity">To donate to <span><img class="logo" src="assets/img/give.jpg"></span></span><br/>
+        	<span id="charity2" class="charity_label charity2">0</span>      
         	</p>        
         </div>
     </div>
@@ -61,11 +68,7 @@
 </div>    
     
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/custom.js"></script>
+   
+
   </body>
 </html>
