@@ -3,7 +3,7 @@ var totals = {}
 function fadeInfadeOut(element, endpoint) {
 	$.ajax({
 		type: "GET",
-		url: 'https://codiuscheckin.localtunnel.me/'+endpoint,
+		url: 'http://54.172.227.161:8000/'+endpoint,
 		success: function(data) {
 			if (data != totals[endpoint]) {
 					element.fadeOut('slow', function() {
